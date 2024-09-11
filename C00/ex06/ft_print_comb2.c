@@ -1,15 +1,15 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_print_comb2.c                                    :+:    :+:           */
+/*   ft_print_comb2.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dloustal <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/15 12:08:25 by dloustal          #+#    #+#             */
-/*   Updated: 2024/08/20 13:53:35 by dloustal       ########   odam.nl        */
+/*   Updated: 2024/09/10 13:39:06 by dloustal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include <unistd.h>
+
 
 void	aux_write_int(int a)
 {
@@ -18,6 +18,7 @@ void	aux_write_int(int a)
 	if (a < 10)
 	{
 		c = a + '0';
+		write(1, "0", 1);
 		write(1, &c, 1);
 	}
 	else
@@ -38,12 +39,8 @@ void	ft_print_comb2(void)
 		b = a + 1;
 		while (b < 100)
 		{
-			if (a < 10)
-				write(1, "0", 1);
 			aux_write_int(a);
 			write(1, " ", 1);
-			if (b < 10)
-				write(1, "0", 1);
 			aux_write_int(b);
 			if (a != 98)
 				write(1, ", ", 2);

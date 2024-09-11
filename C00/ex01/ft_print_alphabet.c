@@ -1,15 +1,15 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_print_alphabet.c                                 :+:    :+:           */
+/*   ft_print_alphabet.c                                :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dloustal <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: dloustalot <dloustalot@student.42.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/14 10:51:36 by dloustal          #+#    #+#             */
-/*   Updated: 2024/08/20 13:42:21 by dloustal       ########   odam.nl        */
+/*   Updated: 2024/09/10 13:29:14 by dloustalot       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include <unistd.h>
+
 
 void	ft_print_alphabet(void)
 {
@@ -22,6 +22,7 @@ void	ft_print_alphabet(void)
 		letter++;
 	}
 }
+
 
 // int	main(void)
 // {
